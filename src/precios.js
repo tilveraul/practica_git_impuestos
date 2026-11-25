@@ -6,7 +6,7 @@
  * @throws {RangeError} Si el precio es negativo.
  */
 function conIva(precio, iva = 21) {
-  if (precio < 0) throw new RangeError('El precio no puede ser negativo');
+   if (precio < 0) throw new RangeError(`El precio no puede ser negativo (recibido: ${precio})`);
   return precio + (precio * iva) / 100;
 }
 
