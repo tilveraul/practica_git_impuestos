@@ -1,0 +1,17 @@
+{
+  "name": "practica-git-impuestos",
+  "version": "1.0.0",
+  "description": "Proyecto mínimo en JavaScript para la práctica de Entorno de desarrollo y control de versiones (UD2).",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Tu Nombre",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "jest": "^30.5.2"
+  }
+}
