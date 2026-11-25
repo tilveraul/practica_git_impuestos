@@ -29,4 +29,17 @@ function precioFinal(precio, descuento, iva = 21) {
   return conIva(conDescuento(precio, descuento), iva);
 }
 
+/**
+ * Suma el IVA a un precio.
+ * @param {number} precio - Precio sin IVA.
+ * @param {number} [iva=21] - Porcentaje de IVA.
+ * @returns {number} Precio con IVA.
+ * @throws {RangeError} Si el precio es negativo.
+ */
+function conIva(precio, iva = 21) {
+  if (precio < 0) throw new RangeError('El precio no puede ser negativo');
+  return precio + (precio * iva) / 100;
+}
+
+
 module.exports = { conIva, conDescuento, precioFinal };
